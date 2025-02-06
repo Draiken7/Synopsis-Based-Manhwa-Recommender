@@ -56,11 +56,29 @@ First step was to check if there is an optimal range of features for which the s
 - **Davies-Bouldin Score vs Number of Principal Components vs Number of Clusters**
   The scores seem to decrease with increasing number of clusters and increase with increasing number of principal components. The minimum score can be observed here when the number of princcipal components is 3.
 
-  - **KMeans**   ![image](https://github.com/user-attachments/assets/f22aaeba-214d-441a-8b02-1f03e3237300)
+  - **KMeans**
+    ![image](https://github.com/user-attachments/assets/f22aaeba-214d-441a-8b02-1f03e3237300)
 
   - **Agglomerative Clustering**   ![image](https://github.com/user-attachments/assets/89ecb139-b9ee-4ae2-b736-b210f5ad8a71)
 
   - **Gaussian Mixture**   ![image](https://github.com/user-attachments/assets/93ae5ed8-9f82-49d2-b525-9925546c7cbd)
+ 
+  - **Affinity Propagation**
+ 
+    ![image](https://github.com/user-attachments/assets/86318211-fc35-4f5f-8dd1-2fe86b7176f9)
+    ![image](https://github.com/user-attachments/assets/2ade666c-1f54-4496-b4c8-687c54bb2ccd)
+    ![image](https://github.com/user-attachments/assets/3486206c-628d-49af-ab72-7423ecbba6ea)
+
+
+## 3. Hper Parameter Tuning
+### Number of Principal Components
+Various values for PCA were tested against 18 clusters for Kmeans, Agglomerative Clustering and Gaussain Mixture models. The dataset originally has 18 disticnt `genre` tags which is why I chose the base cluster size to be 18.   
+![image](https://github.com/user-attachments/assets/3a3596a2-bae2-4624-bad6-937653df0f06)
+![image](https://github.com/user-attachments/assets/e6dfccf4-4585-40e5-baca-a1f531749f6b)
+
+
+
+
 
 
 
