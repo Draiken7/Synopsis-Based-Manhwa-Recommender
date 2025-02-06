@@ -1,4 +1,4 @@
-# Synopsis-Based-Manhwa-Recommender
+![image](https://github.com/user-attachments/assets/fcdc85c0-8934-4667-b4ec-d72ab61cd5ce)# Synopsis-Based-Manhwa-Recommender
 A simple [Manhwa](https://en.wikipedia.org/wiki/Manhwa) Recommender based on a [Kaggle](https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets?select=webtoon_originals_en.csv) dataset.
 Sources and References:
 1. [AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2021/07/recommendation-system-understanding-the-basic-concepts/)
@@ -75,6 +75,42 @@ First step was to check if there is an optimal range of features for which the s
 Various values for PCA were tested against 18 clusters for Kmeans, Agglomerative Clustering and Gaussain Mixture models. The dataset originally has 18 disticnt `genre` tags which is why I chose the base cluster size to be 18.   
 ![image](https://github.com/user-attachments/assets/3a3596a2-bae2-4624-bad6-937653df0f06)
 ![image](https://github.com/user-attachments/assets/e6dfccf4-4585-40e5-baca-a1f531749f6b)
+
+Affinity Propagation generates various cluster sizes for various PCA configurations.  
+![image](https://github.com/user-attachments/assets/55362dfe-b212-41f2-b1c6-108f4a04faa0)
+
+
+**Note** Here PCA starts at 3 and goes up to 768, therefore the lowest value of pca is 3, not 0.
+
+### Number of Clusters
+Now fixing number of Principal components at 3 and running the models for different cluster sizes generates the following loss metrics. Affinity propagation only generates one value along with the estimated number of clusters.
+![image](https://github.com/user-attachments/assets/3e1c0fef-c2ef-4e2e-9bc8-6174fbc44bc9)
+![image](https://github.com/user-attachments/assets/90690ba9-48af-4472-a53c-7c942b1c947e)
+
+For Affinity Propagation:
+```
+Number of Selected features: 3 
+Number of Clusters: 87 
+Silhouette Score: 0.22066413903641394 
+Davies Bouldin Score: 1.0432482481763137
+```
+And the Best metrics for all other models are as follows:
+```
+For model KMeans : Clusters: 3 - Silhouette Score: 0.30707533503582124 || Davies-Boulin Score: 1.168728660165156
+For model Agglomerative Clustering : Clusters: 901 - Silhouette Score: 0.31233377139424795 || Davies-Boulin Score: 0.6823371172092239
+For model Gaussian Mixture : Clusters: 3 - Silhouette Score: 0.3078791491633459 || Davies-Boulin Score: 1.1679644383455392
+```
+
+Further Hyper parameter tuning was done to find the best parameters for Agglomerative clustering, Gaussian Mixture and Affinity propagation. THe best model details are:
+- **Agglomerative Clustering**:
+  - **Ward** linkage with **901** clusters
+  - *Silhouette Score*: `0.31233377139424795`
+  - *Davies-Bouldin Score*: `0.6823371172092239`
+
+
+## 4. Recommendations
+
+
 
 
 
