@@ -2,3 +2,7 @@
 
 There are 18 unique tags provided in the [Kaggle Dataset](https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets?select=webtoon_originals_en.csv) that can be used to generate [cosine similarity](https://www.sciencedirect.com/topics/computer-science/cosine-similarity#:~:text=Cosine%20similarity%20measures%20the%20similarity,document%20similarity%20in%20text%20analysis.) scores,
 which can then be used as vectors and recommendation can be a filtered set of 5-10 closest vectors to the input.
+
+Other Sources:
+1. [AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2021/07/recommendation-system-understanding-the-basic-concepts/)
+2. [Medium](https://medium.com/@prateekgaurav/step-by-step-content-based-recommendation-system-823bbfd0541c) 
