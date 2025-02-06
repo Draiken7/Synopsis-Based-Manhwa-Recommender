@@ -109,8 +109,7 @@ Further Hyper parameter tuning was done to find the best parameters for Agglomer
 
 
 ## 4. Recommendations
-
-
+The clustering is done using the best model and saved to `clustered_recom.pkl`. Recommendations are then generated using this dataset. This is done since the dataset is static and there is no need for recomputing clusters using the models. 
 
 
 
