@@ -36,9 +36,9 @@ First step was to check if there is an optimal range of features for which the s
 (**NOTE** PCA 0 indicates all features are taken as is.)
 
 - **Silhouette Score vs Number of Principal Components vs Number of Clusters**
-  THere seems to be a general trend for Kmeans, Agglomerative clustering and Gaussain Mixture models that as the number of clusters increase, the score drops. Similarly as the number of principal components increases, there is a somewhat decreasing trend for the scores. A noticable spike happens when the number of principal components is set to 3.
+  There seems to be a general trend for Kmeans, Agglomerative clustering and Gaussain Mixture models that as the number of clusters increase, the score drops. Similarly as the number of principal components increases, there is a somewhat decreasing trend for the scores. A noticable spike happens when the number of principal components is set to 3.
   
-  - **KMEANS**  
+  - **KMeans**  
     ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
   
   - **Agglomerative Clustering**
@@ -52,6 +52,21 @@ First step was to check if there is an optimal range of features for which the s
     ![image](https://github.com/user-attachments/assets/e00db861-9c09-4428-9d20-3e14b74030f1)
     ![image](https://github.com/user-attachments/assets/a5b4c991-afa2-4ca9-970f-ff40f69bd919)
     ![image](https://github.com/user-attachments/assets/a88c93e6-42e8-4bdc-96f5-1a833c0d1ad8)
+
+- **Davies-Bouldin Score vs Number of Principal Components vs Number of Clusters**
+  The scores seem to decrease with increasing number of clusters and increase with increasing number of principal components. The minimum score can be observed here when the number of princcipal components is 3.
+
+  - **KMeans**
+    ![image](https://github.com/user-attachments/assets/f22aaeba-214d-441a-8b02-1f03e3237300)
+
+  - **Agglomerative Clustering**
+    The score seems to converge for all cluster sizes when the entire feature dimension is taken as is.
+    ![image](https://github.com/user-attachments/assets/89ecb139-b9ee-4ae2-b736-b210f5ad8a71)
+
+  - **Gaussian Mixture**
+    The score seems to converge for all cluster sizes when number of dimensions is 768, that is when all features are taken.
+    ![image](https://github.com/user-attachments/assets/93ae5ed8-9f82-49d2-b525-9925546c7cbd)
+
 
 
 
