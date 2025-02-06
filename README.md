@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fcdc85c0-8934-4667-b4ec-d72ab61cd5ce)# Synopsis-Based-Manhwa-Recommender
+# Synopsis-Based-Manhwa-Recommender
 A simple [Manhwa](https://en.wikipedia.org/wiki/Manhwa) Recommender based on a [Kaggle](https://www.kaggle.com/datasets/iridazzle/webtoon-originals-datasets?select=webtoon_originals_en.csv) dataset.
 Sources and References:
 1. [AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2021/07/recommendation-system-understanding-the-basic-concepts/)
