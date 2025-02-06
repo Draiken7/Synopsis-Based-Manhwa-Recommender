@@ -38,7 +38,7 @@ First step was to check if there is an optimal range of features for which the s
 - **Silhouette Score vs Number of Principal Components vs Number of Clusters**
   THere seems to be a general trend for Kmeans, Agglomerative clustering and Gaussain Mixture models that as the number of clusters increase, the score drops. Similarly as the number of principal components increases, there is a somewhat decreasing trend for the scores. A noticable spike happens when the number of principal components is set to 3.
   
-  - **KMEANS** \n
+  - **KMEANS** @\n
     ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
   
   - **Agglomerative Clustering**
