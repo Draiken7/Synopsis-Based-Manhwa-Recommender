@@ -47,3 +47,8 @@ First step was to check if there is an optimal range of features for which the s
   - **Gaussian Mixture**
     ![image](https://github.com/user-attachments/assets/3d44105e-5912-48b0-83d0-7021a1d7cf43)
 
+  - **Affinity Propagation**
+    ![image](https://github.com/user-attachments/assets/e00db861-9c09-4428-9d20-3e14b74030f1) ![image](https://github.com/user-attachments/assets/a5b4c991-afa2-4ca9-970f-ff40f69bd919) ![image](https://github.com/user-attachments/assets/a88c93e6-42e8-4bdc-96f5-1a833c0d1ad8)
+
+
+
