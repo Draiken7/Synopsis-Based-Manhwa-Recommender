@@ -35,12 +35,10 @@ Finding good perfromace indicating metrics for unsupervised learning algorithms 
 First step was to check if there is an optimal range of features for which the selected models perform better. The number of principal components started at 3 to almost 256. the following are the results:
 (**NOTE** PCA 0 indicates all features are taken as is.)
 
+- **Silhouette Score vs Number of Principal Components vs Number of Clusters**
+  THere seems to be a general trend for Kmeans, Agglomerative clustering and Gaussain Mixture models that as the number of clusters increase, the score drops. Similarly as the number of principal components increases, there is a somewhat decreasing trend for the scores. A noticable spike happens when the number of principal components is set to 3.
 - **KMEANS**
-  - For Kmeans, the silhouette score tends to converge closer to zero with increasing number of clusters as well as for increasing number of principal components. Note that this trend is only broken when number of principal components is 3, which results in highest score (closer to ideal 1) for all clustering sizes.
     ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
-    
-  - The davies bouldin score also shows reducing values with increasing cluster sizes but the trend is not clear for increasing principal components. A clear minimum for all clustering sizes is visible for 3 principal components
-    ![image](https://github.com/user-attachments/assets/0d13ae07-0d23-4887-8626-a65244350e47)
-
-- **Agglomerative Clustering**
-  - 
+  
+ - **Agglomerative Clustering**
+   ![image](https://github.com/user-attachments/assets/7baf8e59-e873-4ec9-8cc1-3cea9afe58e4)
