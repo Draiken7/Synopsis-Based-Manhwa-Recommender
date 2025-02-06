@@ -33,11 +33,14 @@ Scikit documentation lists all available clustering models ([Here](https://sciki
 Finding good perfromace indicating metrics for unsupervised learning algorithms was a challenge and the two metrics that seemed logical for this project were [Silhouette](https://medium.com/@hazallgultekin/what-is-silhouette-score-f428fb39bf9a) and [Davies Bouldin](https://www.geeksforgeeks.org/davies-bouldin-index/) Score. Most other metrics rely on some form of ground truth whereas these metrics dont and generate an easy to understand value as well. I aimed to choose a model with a good silhouette and DAvies bouldin score. Informed reasonging helped me infer that the silhouette score could not be 1, as cluster may be overlapping and vectors within clusters spread apart. Similarly, the Davies bouldin score could not be 0 since i expected the intra cluster distance vs inter cluster distance to be larger signifying  theat the clusters are close together and large. Both these notions are backed by the idea that a single manhwa title may belong to multiple latent sub genres (clusters). The aim was to get a high positive result for silhouette score and a non negative lowest score for DAvies bouldin score.
 
 First step was to check if there is an optimal range of features for which the selected models perform better. The number of principal components started at 3 to almost 256. the following are the results:
+(**NOTE** PCA 0 indicates all features are taken as is.)
+
 - **KMEANS**
-  - ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
-    For Kmeans, the silhouette score tends to converge closer to zero with increasing number of clusters as well as for increasing number of principal components. Note that this trend is only broken when number of principal components is 3, which results in highest score (closer to ideal 1) for all clustering sizes.
-  - ![image](https://github.com/user-attachments/assets/0d13ae07-0d23-4887-8626-a65244350e47)
-    The davies bouldin score also shows reducing values with increasing cluster sizes but the trend is not clear for increasing principal components. A clear minimum for all clustering sizes is visible for 3 principal components
+  - For Kmeans, the silhouette score tends to converge closer to zero with increasing number of clusters as well as for increasing number of principal components. Note that this trend is only broken when number of principal components is 3, which results in highest score (closer to ideal 1) for all clustering sizes.
+    ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
+    
+  - The davies bouldin score also shows reducing values with increasing cluster sizes but the trend is not clear for increasing principal components. A clear minimum for all clustering sizes is visible for 3 principal components
+    ![image](https://github.com/user-attachments/assets/0d13ae07-0d23-4887-8626-a65244350e47)
 
 - **Agglomerative Clustering**
   - 
