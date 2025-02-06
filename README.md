@@ -43,3 +43,7 @@ First step was to check if there is an optimal range of features for which the s
   
   - **Agglomerative Clustering**
     ![image](https://github.com/user-attachments/assets/7baf8e59-e873-4ec9-8cc1-3cea9afe58e4)
+
+  - **Gaussian Mixture**
+    ![image](https://github.com/user-attachments/assets/3d44105e-5912-48b0-83d0-7021a1d7cf43)
+
