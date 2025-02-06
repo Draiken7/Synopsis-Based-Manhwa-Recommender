@@ -42,4 +42,4 @@ First step was to check if there is an optimal range of features for which the s
     ![image](https://github.com/user-attachments/assets/6af5c62a-ffd6-4cf1-a738-81adc57d0c41)
   
   - **Agglomerative Clustering**
-   ![image](https://github.com/user-attachments/assets/7baf8e59-e873-4ec9-8cc1-3cea9afe58e4)
+    ![image](https://github.com/user-attachments/assets/7baf8e59-e873-4ec9-8cc1-3cea9afe58e4)
