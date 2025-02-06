@@ -56,16 +56,11 @@ First step was to check if there is an optimal range of features for which the s
 - **Davies-Bouldin Score vs Number of Principal Components vs Number of Clusters**
   The scores seem to decrease with increasing number of clusters and increase with increasing number of principal components. The minimum score can be observed here when the number of princcipal components is 3.
 
-  - **KMeans**
-    ![image](https://github.com/user-attachments/assets/f22aaeba-214d-441a-8b02-1f03e3237300)
+  - **KMeans**   ![image](https://github.com/user-attachments/assets/f22aaeba-214d-441a-8b02-1f03e3237300)
 
-  - **Agglomerative Clustering**
-    The score seems to converge for all cluster sizes when the entire feature dimension is taken as is.
-    ![image](https://github.com/user-attachments/assets/89ecb139-b9ee-4ae2-b736-b210f5ad8a71)
+  - **Agglomerative Clustering**   ![image](https://github.com/user-attachments/assets/89ecb139-b9ee-4ae2-b736-b210f5ad8a71)
 
-  - **Gaussian Mixture**
-    The score seems to converge for all cluster sizes when number of dimensions is 768, that is when all features are taken.
-    ![image](https://github.com/user-attachments/assets/93ae5ed8-9f82-49d2-b525-9925546c7cbd)
+  - **Gaussian Mixture**   ![image](https://github.com/user-attachments/assets/93ae5ed8-9f82-49d2-b525-9925546c7cbd)
 
 
 
