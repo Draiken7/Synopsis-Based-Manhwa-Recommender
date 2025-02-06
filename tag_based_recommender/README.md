@@ -4,5 +4,4 @@ There are 18 unique tags provided in the [Kaggle Dataset](https://www.kaggle.com
 which can then be used as vectors and recommendation can be a filtered set of 5-10 closest vectors to the input.
 
 Other Sources:
-1. [AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2021/07/recommendation-system-understanding-the-basic-concepts/)
-2. [Medium](https://medium.com/@prateekgaurav/step-by-step-content-based-recommendation-system-823bbfd0541c) 
+1. [Medium](https://medium.com/@prateekgaurav/step-by-step-content-based-recommendation-system-823bbfd0541c) 
