@@ -214,7 +214,7 @@ $$ w_1 + w_2 = 1.0 $$
 This allows us to weigh the emotional resonance of the synopsis against strict genre guardrails, capturing the best of both metrics.
 
 <figure style="text-align: center;">
-  <img src="update_hybrid_ranking_comparision.png" alt="Hybrid (cosine + jaccard Similarity) Ranking">
+  <img src="./update_hybrid_ranking_comparision.png" alt="Hybrid (cosine + jaccard Similarity) Ranking">
   <figcaption><i><b>Figure v2.0.2.</b> Hybrid (cosine + jaccard Similarity) Ranking </i></figcaption>
 </figure>
 
