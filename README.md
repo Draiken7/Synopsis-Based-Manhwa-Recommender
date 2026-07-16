@@ -207,10 +207,10 @@ In purely semantic terms, these are spectacular matches. They all share the prof
 
 The final Hybrid Score is calculated as follows:
 
-$$hybrid\_score = w_1 \times cosine\_similarity + w_2 \times jaccard\_similarity $$
+$$hybrid\_score = w_1 \times cosinesimilarity + w_2 \times jaccardsimilarity$$
 
 where:
-$$ w_1 + w_2 = 1.0 $$
+$$w_1 + w_2 = 1.0$$
 
 This allows us to weigh the emotional resonance of the synopsis against strict genre guardrails, capturing the best of both metrics.
 
