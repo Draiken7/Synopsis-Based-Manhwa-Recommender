@@ -168,7 +168,8 @@ The modular code now sits under the `Refactored` Folder with the following struc
 
 The most significant update stems from applying UMAP dimensionality reduction to visualize how the synopsis embeddings relate to one another in 3D space.
 
-[insert the index.html here that allows 3d interactive map]
+[![Interactive Latent Space](3d_embeddings_plot.png)](https://draiken7.github.io/Synopsis-Based-Manhwa-Recommender/Refactored/index.html)
+*Click the image above to explore the interactive 3D latent space.*
 
 The Insight: The visualization revealed that synopsis embeddings do not form strict, isolated clusters. This logically makes sense: storytelling tropes bleed across genres. For example, the trope of a "lonely protagonist meeting someone unexpectedly and finding hope" is a common narrative thread that can exist in an Action setting just as easily as a Comedy or Romance setting.
 
