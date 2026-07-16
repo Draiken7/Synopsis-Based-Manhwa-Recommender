@@ -168,7 +168,7 @@ The modular code now sits under the `Refactored` Folder with the following struc
 
 The most significant update stems from applying UMAP dimensionality reduction to visualize how the synopsis embeddings relate to one another in 3D space.
 
-[![Interactive Latent Space](3d_embeddings_plot.png)](https://draiken7.github.io/Synopsis-Based-Manhwa-Recommender/Refactored/index.html)
+[![Interactive Latent Space](Refactored/3d_embeddings_plot.png)](https://draiken7.github.io/Synopsis-Based-Manhwa-Recommender/Refactored/index.html)
 *Click the image above to explore the interactive 3D latent space.*
 
 The Insight: The visualization revealed that synopsis embeddings do not form strict, isolated clusters. This logically makes sense: storytelling tropes bleed across genres. For example, the trope of a "lonely protagonist meeting someone unexpectedly and finding hope" is a common narrative thread that can exist in an Action setting just as easily as a Comedy or Romance setting.
@@ -176,7 +176,7 @@ The Insight: The visualization revealed that synopsis embeddings do not form str
 Because stories exist on a continuous spectrum rather than in hard categories, clustering algorithms are ineffective. Therefore, relying on continuous distance metrics like Cosine Similarity across the embedding space is a far superior approach.
 
 <figure style="text-align: center;">
-  <img src="update_cosine_similarity_comparision.png" alt="Cosine Similarity Ranking">
+  <img src="Refactored/update_cosine_similarity_comparision.png" alt="Cosine Similarity Ranking">
   <figcaption><i><b>Figure v2.0.1.</b> Cosine Similarity Based Ranking </i></figcaption>
 </figure>
 
@@ -215,7 +215,7 @@ $$ w_1 + w_2 = 1.0 $$
 This allows us to weigh the emotional resonance of the synopsis against strict genre guardrails, capturing the best of both metrics.
 
 <figure style="text-align: center;">
-  <img src="./update_hybrid_ranking_comparision.png" alt="Hybrid (cosine + jaccard Similarity) Ranking">
+  <img src="Refactored/update_hybrid_ranking_comparision.png" alt="Hybrid (cosine + jaccard Similarity) Ranking">
   <figcaption><i><b>Figure v2.0.2.</b> Hybrid (cosine + jaccard Similarity) Ranking </i></figcaption>
 </figure>
 
